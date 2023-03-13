@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/waffles.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas waffle-bar</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizza.html">Pizzas</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="postres.html">Postre</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a> </button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+    
+    <div id="waffles">
+        <h3>WAFFLES</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="waffle" onclick="waffle1()">
+                    <img src="../imagenes/waffles/waffle1.png" alt="foto no disponible">
+                    <p class="nombre">Nutella</p>
+                    <p id="descripcion_waffle1" class="descripcion"></p>
+                    <p id="precio_waffle1" class="precio"></p>
+                </div>
+                <div class="inputwaffle1">
+                    <input class="ingresonumero1" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecwaffle1()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarwaffle1()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="waffle" onclick="waffle2()">
+                    <img src="../imagenes/waffles/waffle2.png" alt="foto no disponible">
+                    <p class="nombre">Dulce de leche, banana</p>
+                    <p id="descripcion_waffle2" class="descripcion"></p>
+                    <p id="precio_waffle2" class="precio"></p>
+                </div>
+                <div class="inputwaffle2">
+                    <input class="ingresonumero2" id="cantidadwaffle2" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecwaffle2()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarwaffle2()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="waffle" onclick="waffle3()">
+                    <img src="../imagenes/waffles/waffle3.png" alt="foto no disponible">
+                    <p class="nombre">Dulce de leche, galletas</p>
+                    <p id="descripcion_waffle3" class="descripcion"></p>
+                    <p id="precio_waffle3" class="precio"></p>
+                </div>
+                <div class="inputwaffle3">
+                    <input class="ingresonumero3" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecwaffle3()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarwaffle3()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="waffle" onclick="waffle4()">
+                    <img src="../imagenes/waffles/waffle4.png" alt="foto no disponible">
+                    <p class="nombre">Clasico</p>
+                    <p id="descripcion_waffle4" class="descripcion"></p>
+                    <p id="precio_waffle4" class="precio"></p>
+                </div>
+                <div class="inputwaffle4">
+                    <input class="ingresonumero4" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecwaffle4()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarwaffle4()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="waffle" onclick="waffle5()">
+                    <img src="../imagenes/waffles/waffle5.png" alt="foto no disponible">
+                    <p class="nombre">Frutal</p>
+                    <p id="descripcion_waffle5" class="descripcion"></p>
+                    <p id="precio_waffle5" class="precio"></p>
+                </div>
+                <div class="inputwaffle5">
+                    <input class="ingresonumero5" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecwaffle5()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarwaffle5()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="waffle" onclick="waffle6()">
+                    <img src="../imagenes/waffles/waffle6.png" alt="foto no disponible">
+                    <p class="nombre">Verduras</p>
+                    <p id="descripcion_waffle6" class="descripcion"></p>
+                    <p id="precio_waffle6" class="precio"></p>
+                </div>
+                <div class="inputwaffle6">
+                    <input class="ingresonumero6" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecwaffle6()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarwaffle6()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigos.js/waffles.js"></script>
+</body>
+</html>

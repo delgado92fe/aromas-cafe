@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/desayuno.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas desayuno-bar</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu-fitness"><a href="#fitness">Desayuno fitness</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizza.html">Pizzas</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="postres.html">Postre</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a></button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+    
+    <div id="desayunos">
+        <h3>Desayuno</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno1()">
+                    <img src="../imagenes/desayunos/desayuno1.png" alt="foto no disponible">
+                    <p class="nombre">Desayuno Completo</p>
+                    <p id="descripcion_desayuno1" class="descripcion"></p>
+                    <p id="precio_desayuno1" class="precio"></p>
+                </div>
+                <div class="inputdesayuno1">
+                    <div class="divOpcion">
+                        <button class="opcion cafe1">café</button>
+                        <button class="opcion te1">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero1" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno1()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno1()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno2()">
+                    <img src="../imagenes/desayunos/desayuno2.png" alt="foto no disponible">
+                    <p class="nombre">Desayuno Aromas</p>
+                    <p id="descripcion_desayuno2" class="descripcion"></p>
+                    <p id="precio_desayuno2" class="precio"></p>
+                </div>
+                <div class="inputdesayuno2">
+                    <div class="divOpcion">
+                        <button class="opcion cafeLeche1">café con leche</button>
+                        <button class="opcion te2">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero2" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno2()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno2()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno3()">
+                    <img src="../imagenes/desayunos/desayuno3.png" alt="foto no disponible">
+                    <p class="nombre">Desayuno de campo</p>
+                    <p id="descripcion_desayuno3" class="descripcion"></p>
+                    <p id="precio_desayuno3" class="precio"></p>
+                </div>
+                <div class="inputdesayuno3">
+                    <div class="divOpcion">
+                        <button class="opcion cafeLeche2">café con leche</button>
+                        <button class="opcion te3">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero3" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno3()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno3()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno4()">
+                    <img src="../imagenes/desayunos/desayuno4.png" alt="foto no disponible">
+                    <p class="nombre">Desayuno Arauco</p>
+                    <p id="descripcion_desayuno4" class="descripcion"></p>
+                    <p id="precio_desayuno4" class="precio"></p>
+                </div>
+                <div class="inputdesayuno4">
+                    <div class="divOpcion">
+                        <button class="opcion cafe2">café</button>
+                        <button class="opcion te4">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero4" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno4()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno4()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno5()">
+                    <img src="../imagenes/desayunos/desayuno5.png" alt="foto no disponible">
+                    <p class="nombre">Desayuno Americano</p>
+                    <p id="descripcion_desayuno5" class="descripcion"></p>
+                    <p id="precio_desayuno5" class="precio"></p>
+                </div>
+                <div class="inputdesayuno5">
+                    <div class="divOpcion">
+                        <button class="opcion cafe3">café</button>
+                        <button class="opcion te5">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero5" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno5()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno5()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno6()">
+                    <img src="../imagenes/desayunos/desayuno6.png" alt="foto no disponible">
+                    <p class="nombre">Desayuno Tentación</p>
+                    <p id="descripcion_desayuno6" class="descripcion"></p>
+                    <p id="precio_desayuno6" class="precio"></p>
+                </div>
+                <div class="inputdesayuno6">
+                    <div class="divOpcion">
+                        <button class="opcion cafe4">café</button>
+                        <button class="opcion te6">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero6" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno6()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno6()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno7()">
+                    <img src="../imagenes/desayunos/desayuno7.png" alt="foto no disponible">
+                    <p class="nombre">Opciones light</p>
+                    <p id="descripcion_desayuno7" class="descripcion"></p>
+                    <p id="precio_desayuno7" class="precio"></p>
+                </div>
+                <div class="inputdesayuno7">
+                    <div class="divOpcion">
+                        <button class="opcion cafe5">café</button>
+                        <button class="opcion cafeLecheDes">café con leche descremada</button>
+                        <button class="opcion te7">té</button>
+                        <button class="opcion mateCocido">mate cocido</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero7" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno7()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno7()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fitness">
+        <h3>FITNESS</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno8()">
+                    <img src="../imagenes/fitness1.png" alt="foto no disponible">
+                    <p class="nombre">Fitness 1</p>
+                    <p id="descripcion_desayuno8" class="descripcion"></p>
+                    <p id="precio_desayuno8" class="precio"></p>
+                </div>
+                <div class="inputdesayuno8">
+                    <div class="divOpcion">
+                        <button class="opcion cafe6">café</button>
+                        <button class="opcion te8">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero8" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno8()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno8()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno9()">
+                    <img src="../imagenes/fitness2.png" alt="foto no disponible">
+                    <p class="nombre">Fitness 2</p>
+                    <p id="descripcion_desayuno9" class="descripcion"></p>
+                    <p id="precio_desayuno9" class="precio"></p>
+                </div>
+                <div class="inputdesayuno9">
+                    <div class="divOpcion">
+                        <button class="opcion cafe7">café</button>
+                        <button class="opcion te9">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero9" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno9()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno9()">cancelar</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="desayuno" onclick="desayuno10()">
+                    <img src="../imagenes/fitness3.png" alt="foto no disponible">
+                    <p class="nombre">Fitness 3</p>
+                    <p id="descripcion_desayuno10" class="descripcion"></p>
+                    <p id="precio_desayuno10" class="precio"></p>
+                </div>
+                <div class="inputdesayuno10">
+                    <div class="divOpcion">
+                        <button class="opcion cafe8">café</button>
+                        <button class="opcion te10">té</button>
+                    </div>
+                    <div class="input">
+                        <input class="ingresonumero10" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecdesayuno10()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelardesayuno10()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigos.js/desayuno.js"></script>
+</body>
+</html>

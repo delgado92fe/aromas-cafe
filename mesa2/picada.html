@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/picada.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas Cafe-bar</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizza.html">Pizzas</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu-extra"><a href="#sandwich">Sandwich</a></button>
+                <button class="botonmenu-extra"><a href="#baguettes">Baguettes</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="postres.html">Postres</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a></button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+    
+    <div id="picadas">
+        <h3>PICADA</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada1()">
+                    <img id="imagen1" class="imgpicada" src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Clasica</p>
+                    <p id="descripcion_picada1" class="descripcion"></p>
+                    <p id="precio_picada1" class="precio"></p>
+                </div>
+                <div class="inputpicada1">
+                    <input class="ingresonumero1" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpicada1()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada1()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada2()">
+                    <img id="imagen2" src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Aromas</p>
+                    <p id="descripcion_picada2" class="descripcion"></p>
+                    <p id="precio_picada2" class="precio"></p>
+                </div>
+                <div class="inputpicada2">
+                    <input class="ingresonumero2" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpicada2()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada2()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sandwich">
+        <h3>TOSTADOS Y SÁNDWICHES PAN LACTAL</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada3()">
+                    <img id="imagen3" src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Tostado</p>
+                    <p id="descripcion_picada3" class="descripcion"></p>
+                    <p id="precio_picada3" class="precio"></p>
+                </div>
+                <div class="inputpicada3">
+                    <input class="ingresonumero3" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpicada3()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada3()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada4()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Sandwich 1</p>
+                    <p id="descripcion_picada4" class="descripcion"></p>
+                    <p id="precio_picada4" class="precio"></p>
+                </div>
+                <div class="inputpicada4">
+                    <input class="ingresonumero4" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpicada4()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada4()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada5()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Sandwich 2</p>
+                    <p id="descripcion_picada5" class="descripcion"></p>
+                    <p id="precio_picada5" class="precio"></p>
+                </div>
+                <div class="inputpicada5">
+                    <input class="ingresonumero5" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada5()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada5()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada6()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Sandwich 3</p>
+                    <p id="descripcion_picada6" class="descripcion"></p>
+                    <p id="precio_picada6" class="precio"></p>
+                </div>
+                <div class="inputpicada6">
+                    <input class="ingresonumero6" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada6()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada6()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="baguettes">
+        <h3>BAGUETTES</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada7()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Baguette 1</p>
+                    <p id="descripcion_picada7" class="descripcion"></p>
+                    <p id="precio_picada7" class="precio"></p>
+                </div>
+                <div class="inputpicada7">
+                    <input class="ingresonumero7" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada7()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada7()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada8()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Baguette 2</p>
+                    <p id="descripcion_picada8" class="descripcion"></p>
+                    <p id="precio_picada8" class="precio"></p>
+                </div>
+                <div class="inputpicada8">
+                    <input class="ingresonumero8" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada8()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada8()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada9()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Baguette 3</p>
+                    <p id="descripcion_picada9" class="descripcion"></p>
+                    <p id="precio_picada9" class="precio"></p>
+                </div>
+                <div class="inputpicada9">
+                    <input class="ingresonumero9" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada9()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada9()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada10()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Baguette 4</p>
+                    <p id="descripcion_picada10" class="descripcion"></p>
+                    <p id="precio_picada10" class="precio"></p>
+                </div>
+                <div class="inputpicada10">
+                    <input class="ingresonumero10" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada10()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada10()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada11()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Baguette 5</p>
+                    <p id="descripcion_picada11" class="descripcion"></p>
+                    <p id="precio_picada11" class="precio"></p>
+                </div>
+                <div class="inputpicada11">
+                    <input class="ingresonumero11" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada11()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada11()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada12()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Baguette  6</p>
+                    <p id="descripcion_picada12" class="descripcion"></p>
+                    <p id="precio_picada12" class="precio"></p>
+                </div>
+                <div class="inputpicada12">
+                    <input class="ingresonumero12" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada12()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada12()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="picada" onclick="picada13()">
+                    <img src="../imagenes/picada1.png" alt="foto no disponible">
+                    <p class="nombre">Baguette 7</p>
+                    <p id="descripcion_picada13" class="descripcion"></p>
+                    <p id="precio_picada13" class="precio"></p>
+                </div>
+                <div class="inputpicada13">
+                    <input class="ingresonumero13" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpicada13()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpicada13()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigos.js/picada.js"></script>
+</body>
+</html>

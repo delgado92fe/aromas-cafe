@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/bebidas.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas Bebidas</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizza.html">Pizza</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="postres.html">Postre</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a></button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+    
+    <div id="jugos">
+        <h3>jugos</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida">
+                    <img src="../imagenes/bebidas/bebidas1.png" alt="foto no disponible">
+                    <p class="nombre">Jugo de naranja</p>
+                    <div class="SelecChica">
+                        <p id="precio_bebida_chica1" class="precio"></p>
+                        <button class="botonSelec selecChica1">SELECT</button>
+                    </div>
+                    <div class="SelecGrande">
+                        <p id="precio_bebida_grande1" class="precio"></p>
+                        <button class="botonSelec selecGrande1">SELECT</button>
+                    </div>
+                </div>
+                <div class="inputbebida1">
+                    <input class="ingresonumero1" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida1()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida1()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida">
+                    <img src="../imagenes/bebidas/bebidas2.png" alt="foto no disponible">
+                    <p class="nombre">Limonada</p>
+                    <div class="SelecChica">
+                        <p id="precio_bebida_chica2" class="precio"></p>
+                        <button class="botonSelec selecChica2">SELECT</button>
+                    </div>
+                    <div class="SelecGrande">
+                        <p id="precio_bebida_grande2" class="precio"></p>
+                        <button class="botonSelec selecGrande2">SELECT</button>
+                    </div>
+                </div>
+                <div class="inputbebida2">
+                    <input class="ingresonumero2" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida2()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida2()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida">
+                    <img src="../imagenes/bebidas/bebidas3.png" alt="foto no disponible">
+                    <p class="nombre">Mix: naranja, manzana y frutilla</p>
+                    <div class="SelecChica">
+                        <p id="precio_bebida_chica3" class="precio"></p>
+                        <button class="botonSelec selecChica3">SELECT</button>
+                    </div>
+                    <div class="SelecGrande">
+                        <p id="precio_bebida_grande3" class="precio"></p>
+                        <button class="botonSelec selecGrande3">SELECT</button>
+                    </div>
+                </div>
+                <div class="inputbebida3">
+                    <input class="ingresonumero3" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida3()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida3()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida">
+                    <img src="../imagenes/bebidas/bebidas4.png" alt="foto no disponible">
+                    <p class="nombre">Frutas de estacion</p>
+                    <div class="SelecChica">
+                        <p id="precio_bebida_chica4" class="precio"></p>
+                        <button class="botonSelec selecChica4">SELECT</button>
+                    </div>
+                    <div class="SelecGrande">
+                        <p id="precio_bebida_grande4" class="precio"></p>
+                        <button class="botonSelec selecGrande4">SELECT</button>
+                    </div>
+                </div>
+                <div class="inputbebida4">
+                    <input class="ingresonumero4" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida4()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida4()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bebidas">
+        <h3>bebidas</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-agua" onclick="bebidaagua1()">
+                    <img src="../imagenes/bebidas/bebidas5.png" alt="foto no disponible">
+                    <p class="nombre">Agua</p>
+                    <p id="precio_bebidaagua1" class="precio"></p>
+                </div>
+                <div class="inputbebidaagua1">
+                    <input class="ingresonumeroagua1" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebidaagua1()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebidaagua1()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-agua" onclick="bebidaagua2()">
+                    <img src="../imagenes/bebidas/bebidas6.png" alt="foto no disponible">
+                    <p class="nombre">Agua saborizada</p>
+                    <p id="precio_bebidaagua2" class="precio"></p>
+                </div>
+                <div class="inputbebidaagua2">
+                    <input class="ingresonumeroagua2" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebidaagua2()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebidaagua2()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-gaseosa">
+                    <img src="../imagenes/bebidas/bebidas7.png" alt="foto no disponible">
+                    <p class="nombre">Coca cola</p>
+                    <div class="selec350">
+                        <p class="descripcion" id="350-1">350cc <b id="precio-350-coca"></b></p>
+                        <button class="botonSelec selec350-1">SELECT</button>
+                    </div>
+                    <div class="selec500">
+                        <p class="descripcion" id="500-1">500cc <b id="precio-500-coca"></b></p>
+                        <button class="botonSelec selec500-1">SELECT</button>
+                    </div>
+                    <div class="seleclitro1">
+                        <p class="descripcion" id="litro-1">1 Litro <b id="precio-1L-coca"></b></p>
+                        <button class="botonSelec seleclitro-1">SELECT</button>
+                    </div>
+                    <div class="seleclitro15">
+                        <p class="descripcion" id="mediolitro">1,5 Litro <b id="precio-15-coca"></b></p>
+                        <button class="botonSelec seleclitro1-15">SELECT</button>
+                    </div>
+                </div>
+                    <div class="inputbebida5">
+                        <input class="ingresonumero5" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="selecbebida5()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelarbebida5()">cancelar</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-gaseosa">
+                    <img src="../imagenes/bebidas/bebidas8.png" alt="foto no disponible">
+                    <p class="nombre">Fanta</p>
+                    <div class="selec350">
+                        <p class="descripcion" id="350-2">350cc <b id="precio-350-fanta"></b></p>
+                        <button class="botonSelec selec350-2">SELECT</button>
+                    </div>
+                    <div class="selec500">
+                        <p class="descripcion" id="500-2">500cc <b id="precio-500-fanta"></b></p>
+                        <button class="botonSelec selec500-2">SELECT</button>
+                    </div>
+                    <div class="seleclitro1">
+                        <p class="descripcion" id="litro-2">1 Litro <b id="precio-1L-fanta"></b></p>
+                        <button class="botonSelec seleclitro-2">SELECT</button>
+                    </div>
+                    <div class="seleclitro15">
+                        <p class="descripcion" id="mediolitro">1,5 Litro <b id="precio-15-fanta"></b></p>
+                        <button class="botonSelec seleclitro2-15">SELECT</button>
+                    </div>
+                </div>
+                <div class="inputbebida6">
+                    <input class="ingresonumero6" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida6()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida6()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-gaseosa">
+                    <img src="../imagenes/bebidas/bebidas9.png" alt="foto no disponible">
+                    <p class="nombre">Sprite</p>
+                    <div class="selec350">
+                        <p class="descripcion" id="350-3">350cc <b id="precio-350-sprite"></b></p>
+                        <button class="botonSelec selec350-3">SELECT</button>
+                    </div>
+                    <div class="selec500">
+                        <p class="descripcion" id="500-3">500cc <b id="precio-500-sprite"></b></p>
+                        <button class="botonSelec selec500-3">SELECT</button>
+                    </div>
+                    <div class="seleclitro1">
+                        <p class="descripcion" id="litro-3">1 Litro <b id="precio-1L-sprite"></b></p>
+                        <button class="botonSelec seleclitro-3">SELECT</button>
+                    </div>
+                    <div class="seleclitro15">
+                        <p class="descripcion" id="mediolitro">1,5 Litro <b id="precio-15-sprite"></b></p>
+                        <button class="botonSelec seleclitro3-15">SELECT</button>
+                    </div>
+                </div>
+                <div class="inputbebida7">
+                    <input class="ingresonumero7" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida7()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida7()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cervezas">
+        <h3>Cervezas</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida">
+                    <img src="../imagenes/bebidas/bebidas10.png" alt="foto no disponible">
+                    <p class="nombre">Corona</p>
+                    <div class="selec350">
+                        <p class="descripcion" id="coronaChica">chica <b id="precio-corona-chica"></b></p>
+                        <button class="botonSelec selecCoronaChica">SELECT</button>
+                    </div>
+                    <div class="selec500">
+                        <p class="descripcion" id="coronaGrande">grande <b id="precio-corona-grande"></b></p>
+                        <button class="botonSelec selecCoronaGrande">SELECT</button>
+                    </div>
+                </div>
+                <div class="inputbebida8">
+                    <input class="ingresonumero8" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecbebida8()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida8()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-cerveza" onclick="bebida9()">
+                    <img src="../imagenes/bebidas/bebidas11.png" alt="foto no disponible">
+                    <p class="nombre">Heineken</p>
+                    <p id="precio_bebida9" class="precio"></p>
+                </div>
+                <div class="inputbebida9">
+                    <input class="ingresonumero9" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida9()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida9()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-cerveza" onclick="bebida10()">
+                    <img src="../imagenes/bebidas/bebidas12.png" alt="foto no disponible">
+                    <p class="nombre">Miller</p>
+                    <p id="precio_bebida10" class="precio"></p>
+                </div>
+                <div class="inputbebida10">
+                    <input class="ingresonumero10" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida10()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida10()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-cerveza" onclick="bebida11()">
+                    <img src="../imagenes/bebidas/bebidas13.png" alt="foto no disponible">
+                    <p class="nombre">Salta</p>
+                    <p id="precio_bebida11" class="precio"></p>
+                </div>
+                <div class="inputbebida11">
+                    <input class="ingresonumero11" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida11()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida11()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-cerveza" onclick="bebida12()">
+                    <img src="../imagenes/bebidas/bebidas14.png" alt="foto no disponible">
+                    <p class="nombre">Stella</p>
+                    <p id="precio_bebida12" class="precio"></p>
+                </div>
+                <div class="inputbebida12">
+                    <input class="ingresonumero12" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida12()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida12()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-cerveza" onclick="bebida13()">
+                    <img src="../imagenes/bebidas/bebidas15.png" alt="foto no disponible">
+                    <p class="nombre">Imperial</p>
+                    <p id="precio_bebida13" class="precio"></p>
+                </div>
+                <div class="inputbebida13">
+                    <input class="ingresonumero13" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida13()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida13()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-cerveza" onclick="bebida14()">
+                    <img src="../imagenes/bebidas/bebidas16.png" alt="foto no disponible">
+                    <p class="nombre">Patagonia</p>
+                    <p id="precio_bebida14" class="precio"></p>
+                </div>
+                <div class="inputbebida14">
+                    <input class="ingresonumero14" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida14()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida14()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blends">
+        <h3>Blends</h3>
+        <h4>Infusiones alternativas</h4>
+        <p class="descripcion-blends">
+            En lugar del café o té, es un nuevo tipo de infusión. Se prepara slo con tu blend preferido y leche.
+        </p>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-blend" onclick="bebida15()">
+                    <img src="../imagenes/bebidas/bebidas17.png" alt="foto no disponible">
+                    <p class="nombre">Blend Remolacha</p>
+                    <ul class="descripcion15">
+                        <li>Mejora la circulación</li>
+                        <li>Estimula el rendimiento físico</li>
+                        <li>Contribuye a la buena salud cardiovascular</li>
+                        <li>Aporta anti oxidantes que ayudan a prevenir enfermedades</li>
+                        <li>Desintoxicante y mucho más</li>
+                    </ul>
+                    <p id="precio_bebida15" class="precio"></p>
+                </div>
+                <div class="inputbebida15">
+                    <input class="ingresonumero15" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida15()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida15()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="bebida-blend" onclick="bebida16()">
+                    <img src="../imagenes/bebidas/bebidas18.png" alt="foto no disponible">
+                    <p class="nombre">Blend Curcumsa</p>
+                    <ul class="descripcion16">
+                        <li>Protege de enfermedades cardiovasculares</li>
+                        <li>Malestar estomacal, sistema digestivo</li>
+                        <li>Desintoxicante</li>
+                        <li>Antidepresivo natural</li>
+                        <li>Reduce la inflamación</li>
+                        <li>Util para la perdida de peso</li>
+                    </ul>
+                    <p id="precio_bebida16" class="precio"></p>
+                </div>
+                <div class="inputbebida16">
+                    <input class="ingresonumero16" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecbebida16()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarbebida16()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="codigos.js/bebidas.js"></script>
+</body>
+</html>

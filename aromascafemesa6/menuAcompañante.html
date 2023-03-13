@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styleClientes.css?30012023">
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script-->
+        <title>mesa</title>
+    </head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>RESTOBAR</h1></center>
+            <nav class="nav">
+                <button id="botonlomito" class="botonmenu">LOMITO</button>
+                <button id="botonpizza" class="botonmenu"><a href="#pizzas">PIZZA</a></button>
+                <button id="botonhamburgesa" class="botonmenu"><a href="#hamburgesas">HAMBURGESA</a></button>
+                <button id="botonpostre" class="botonmenu">POSTRE</button>
+                <button id="botonbebias" class="botonmenu"><a href="#bebidas">BEBIDAS</a></button>
+            </nav>
+        </div>
+
+            <button id="cuenta" onclick="pedircuenta()">PEDIR CUENTA</button>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></input>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+<div id="pizzas">
+    <h3>PIZZAS</h3>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="pizza-1">
+                <img src="../imagenes/pizza/pizza.jpg" alt="no disponible pizza1">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="inputpizza1">
+                <input class="ingresonumero1" id="cantidadpizza1" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selecPizza1()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelarpizza1()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="pizza-2">
+                <img src="../imagenes/pizza/pizza2.jpg" alt="no disponible pizza2">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="inputpizza2">
+                <input class="ingresonumero2" id="cantidadpizza2" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selecPizza2()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelarpizza2()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="hamburgesas">
+    <h3>HAMBURGESAS</h3>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="hamburg-1">
+                <img src="../imagenes/hamburg/hamburg1.jpg" alt="no disponible hamburg1">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="input1">
+                <input class="ingresonumero1" id="ingresocantidad1" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selec1()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelar1()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="hamburg-2">
+                <img src="../imagenes/hamburg/hamburg1.jpg" alt="no disponible hamburg2">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="input2">
+                <input class="ingresonumero2" id="ingresocantidad2" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selec2()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelar2()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="bebidas">
+    <h3>BEBIDAS</h3>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="bebida-1">
+                <img src="../imagenes/bebidas/vaso1.jpg" alt="no disponible bebida1">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="inputbebida1">
+                <input class="ingresonumero1" id="cantidadbebida1" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selecbebida1()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelarbebida1()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="bebida-2">
+                <img src="../imagenes/bebidas/vaso2.jpg" alt="no disponible bebida2">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="inputbebida2">
+                <input class="ingresonumero2" id="cantidadbebida2" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selecbebida2()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelarbebida2()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>RESTOBAR</h1></center>
+            <nav class="nav">
+                <button id="botonlomito" class="botonmenu">LOMITO</button>
+                <button id="botonpizza" class="botonmenu"><a href="#pizzas">PIZZA</a></button>
+                <button id="botonhamburgesa" class="botonmenu"><a href="#hamburgesas">HAMBURGESA</a></button>
+                <button id="botonpostre" class="botonmenu">POSTRE</button>
+                <button id="botonbebias" class="botonmenu">BEBIDAS</button>
+            </nav>
+        </div>
+
+
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <input id="pedido"></input>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+<div id="pizzas">
+    <h3>PIZZAS</h3>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="pizza-1">
+                <img src="imagenes/pizza/pizza.jpg" alt="no disponible pizza1">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="inputpizza1">
+                <input class="ingresonumero1" id="cantidadpizza1" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selecPizza1()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelarpizza1()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="pizza-2">
+                <img src="imagenes/pizza/pizza2.jpg" alt="no disponible pizza2">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="inputpizza2">
+                <input class="ingresonumero2" id="cantidadpizza2" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selecPizza2()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelarpizza2()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="hamburgesas">
+    <h3>HAMBURGESAS</h3>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="hamburg-1">
+                <img src="imagenes/hamburg/hamburg1.jpg" alt="no disponible hamburg1">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="input1">
+                <input class="ingresonumero1" id="ingresocantidad1" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selec1()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelar1()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cuerpo-principal">
+        <div class="cuadroInterno">
+            <div class="hamburg-2">
+                <img src="imagenes/hamburg/hamburg1.jpg" alt="no disponible hamburg2">
+                <p class="textoingredientes"><b>NOMBRE</b><br>Desripcion de ingredientes</p>
+            </div>
+            <div class="input2">
+                <input class="ingresonumero2" id="ingresocantidad2" type="number" name="clasica">
+                <div class="botones">
+                    <button class="seleccionar" id="enviar-pedido" onclick="selec2()">seleccionar</button>
+                    <button class="cancelar" onclick="cancelar2()">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="acompañante.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/cafe.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas cafe-bar</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizza.html">Pizzas</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="postres.html">Postre</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a></button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido" name="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+    
+    <div id="cafes">
+        <h3>CAFE</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe1()">
+                    <img id="imagen1" class="imgCafe" src="../imagenes/cafes/cafe1.png" alt="foto no disponible">
+                    <p id="nombre1" class="nombre">Café con leche</p>
+                    <p id="descripcion_cafe1" class="descripcion"></p>
+                    <p id="precio_cafe1" class="precio"></p>
+                </div>
+                <div class="inputcafe1">
+                    <input class="ingresonumero1" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe1()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe1()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe2()">
+                    <img id="imagen2" src="../imagenes/cafes/cafe2.png" alt="foto no disponible">
+                    <p id="nombre2" class="nombre">Lagrima</p>
+                    <p id="descripcion_cafe2" class="descripcion"></p>
+                    <p id="precio_cafe2" class="precio"></p>
+                </div>
+                <div class="inputcafe2">
+                    <input class="ingresonumero2" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe2()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe2()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe3()">
+                    <img id="imagen3" src="../imagenes/cafes/cafe3.png" alt="foto no disponible">
+                    <p class="nombre">Espresso</p>
+                    <p id="descripcion_cafe3" class="descripcion"></p>
+                    <p id="precio_cafe3" class="precio"></p>
+                </div>
+                <div class="inputcafe3">
+                    <input class="ingresonumero3" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe3()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe3()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe4()">
+                    <img src="../imagenes/cafes/cafe4.png" alt="foto no disponible">
+                    <p class="nombre">Americano</p>
+                    <p id="descripcion_cafe4" class="descripcion"></p>
+                    <p id="precio_cafe4" class="precio"></p>
+                </div>
+                <div class="inputcafe4">
+                    <input class="ingresonumero4" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe4()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe4()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe5()">
+                    <img src="../imagenes/cafes/cafe5.png" alt="foto no disponible">
+                    <p class="nombre">Caramelo</p>
+                    <p id="descripcion_cafe5" class="descripcion"></p>
+                    <p id="precio_cafe5" class="precio"></p>
+                </div>
+                <div class="inputcafe5">
+                    <input class="ingresonumero5" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe5()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe5()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe6()">
+                    <img src="../imagenes/cafes/cafe6.png" alt="foto no disponible">
+                    <p class="nombre">Cortado</p>
+                    <p id="descripcion_cafe6" class="descripcion"></p>
+                    <p id="precio_cafe6" class="precio"></p>
+                </div>
+                <div class="inputcafe6">
+                    <input class="ingresonumero6" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe6()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe6()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe7()">
+                    <img src="../imagenes/cafes/cafe7.png" alt="foto no disponible">
+                    <p class="nombre">Cappuccino</p>
+                    <p id="descripcion_cafe7" class="descripcion"></p>
+                    <p id="precio_cafe7" class="precio"></p>
+                </div>
+                <div class="inputcafe7">
+                    <input class="ingresonumero7" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe7()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe7()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe8()">
+                    <img src="../imagenes/cafes/cafe8.png" alt="foto no disponible">
+                    <p class="nombre">Submarino</p>
+                    <p id="descripcion_cafe8" class="descripcion"></p>
+                    <p id="precio_cafe8" class="precio"></p>
+                </div>
+                <div class="inputcafe8">
+                    <input class="ingresonumero8" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe8()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe8()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe9()">
+                    <img src="../imagenes/cafes/cafe9.png" alt="foto no disponible">
+                    <p class="nombre">Mocca</p>
+                    <p id="descripcion_cafe9" class="descripcion"></p>
+                    <p id="precio_cafe9" class="precio"></p>
+                </div>
+                <div class="inputcafe9">
+                    <input class="ingresonumero9" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe9()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe9()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe10()">
+                    <img src="../imagenes/cafes/cafe10.png" alt="foto no disponible">
+                    <p class="nombre">Crema</p>
+                    <p id="descripcion_cafe10" class="descripcion"></p>
+                    <p id="precio_cafe10" class="precio"></p>
+                </div>
+                <div class="inputcafe10">
+                    <input class="ingresonumero10" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe10()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe10()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe11()">
+                    <img src="../imagenes/cafes/cafe11.png" alt="foto no disponible">
+                    <p class="nombre">Frappe</p>
+                    <p id="descripcion_cafe11" class="descripcion"></p>
+                    <p id="precio_cafe11" class="precio"></p>
+                </div>
+                <div class="inputcafe11">
+                    <input class="ingresonumero11" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe11()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe11()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe12()">
+                    <img src="../imagenes/cafes/cafe12.png" alt="foto no disponible">
+                    <p class="nombre">Azteca</p>
+                    <p id="descripcion_cafe12" class="descripcion"></p>
+                    <p id="precio_cafe12" class="precio"></p>
+                </div>
+                <div class="inputcafe12">
+                    <input class="ingresonumero12" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe12()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe12()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe13()">
+                    <img src="../imagenes/cafes/cafe13.png" alt="foto no disponible">
+                    <p class="nombre">Irlandes</p>
+                    <p id="descripcion_cafe13" class="descripcion"></p>
+                    <p id="precio_cafe13" class="precio"></p>
+                </div>
+                <div class="inputcafe13">
+                    <input class="ingresonumero13" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe13()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe13()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe14()">
+                    <img src="../imagenes/cafes/cafe14.png" alt="foto no disponible">
+                    <p class="nombre">Vienés</p>
+                    <p id="descripcion_cafe14" class="descripcion"></p>
+                    <p id="precio_cafe14" class="precio"></p>
+                </div>
+                <div class="inputcafe14">
+                    <input class="ingresonumero14" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe14()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe14()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe15()">
+                    <img src="../imagenes/cafes/cafe15.png" alt="foto no disponible">
+                    <p class="nombre">Nutella</p>
+                    <p id="descripcion_cafe15" class="descripcion"></p>
+                    <p id="precio_cafe15" class="precio"></p>
+                </div>
+                <div class="inputcafe15">
+                    <input class="ingresonumero15" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe15()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe15()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe16()">
+                    <img src="../imagenes/cafes/cafe16.png" alt="foto no disponible">
+                    <p class="nombre">Jarrito</p>
+                    <p id="descripcion_cafe16" class="descripcion"></p>
+                    <p id="precio_cafe16" class="precio"></p>
+                </div>
+                <div class="inputcafe16">
+                    <input class="ingresonumero16" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe16()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe16()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="cafe" onclick="cafe17()">
+                    <img src="../imagenes/cafes/cafe17.png" alt="foto no disponible">
+                    <p class="nombre">Pocillo</p>
+                    <p id="descripcion_cafe17" class="descripcion"></p>
+                    <p id="precio_cafe17" class="precio"></p>
+                </div>
+                <div class="inputcafe17">
+                    <input class="ingresonumero17" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecCafe17()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarcafe17()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigos.js/cafe.js"></script>
+</body>
+</html>

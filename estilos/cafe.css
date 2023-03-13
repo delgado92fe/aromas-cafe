@@ -1,0 +1,436 @@
+
+/* CUERPO PRINCIPAL */
+h3{
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 4vh;
+    font-style: italic;
+    font-family: cursive;
+}
+a{
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+}
+.cuerpo-principal{
+    height: auto;
+    width: 80%;
+    padding: 0;
+    margin: 4vh 10%;
+    border: solid 1px #000;
+}
+.cuadroInterno{
+    height: 50vh;
+    width: 100%;
+    background: transparent;
+    position: relative;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.nombre{
+    margin: 0;
+    font-style: oblique;
+    font-size: 20px;
+}
+.descripcion{
+    margin: 0;
+    font-size: 16px;
+}
+.precio{
+    margin: 0;
+    font-size: 16px;
+}
+#cafes{
+    height: auto;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.cafe{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 58% 14% 14% 14%;
+}
+/*INPUTS*/
+.inputcafe1{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe2{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe3{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe4{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe5{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe6{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe7{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe8{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe9{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe10{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe11{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe12{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe13{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe14{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe15{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe16{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+.inputcafe17{
+    height: 14vh;
+    width: 60%;
+    margin: 25% 15%;
+    padding: 0;
+    background-color: #ccae2856;
+    display: none;
+    grid-template-columns: 60% 40%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+/*CLASS INGRESO NUMERO*/
+
+.ingresonumero1{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero2{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero3{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero4{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero5{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero6{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero7{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero8{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero9{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero10{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero11{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero12{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero13{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero14{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero15{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero16{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.ingresonumero17{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 26px;
+    text-align: center;
+}
+.botones{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    display: grid;
+    grid-template-rows: 65% 35%;
+}
+.seleccionar{
+    height: 80%;
+    width: 98%;
+    margin: auto;
+    font-size: 8px;
+}
+.cancelar{
+    height: 90%;
+    width: 98%;
+    margin: auto;
+    font-size: 9px;
+}

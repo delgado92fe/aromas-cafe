@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../../imagenes/aromaslogo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Aromas Cafe Bar</title>
+    </head>
+<body>
+<h1>AROMAS CAFE BAR</h1>
+<button class="botonRegresar"><a class="claseA" href="../../">Regresar</a></button>
+<div class="barra">
+    <p class="mesa mesa1"><a href="#mesa1">mesa 1</a></p>
+    <p class="mesa mesa2"><a href="#mesa2">mesa 2</a></p>
+    <p class="mesa mesa3"><a href="#mesa3">mesa 3</a></p>
+    <p class="mesa mesa4"><a href="#mesa4">mesa 4</a></p>
+    <p class="mesa mesa5"><a href="#mesa5">mesa 5</a></p>
+    <p class="mesa mesa6"><a href="#mesa6">mesa 6</a></p>
+    <p class="mesa mesa7"><a href="#mesa7">mesa 7</a></p>
+    <p class="mesa mesa8"><a href="#mesa8">mesa 8</a></p>
+    <p class="mesa mesa9"><a href="#mesa9">mesa 9</a></p>
+    <p class="mesa mesa10"><a href="#mesa10">mesa 10</a></p>
+    <p class="mesa mesa11"><a href="#mesa11">mesa 11</a></p>
+    <p class="mesa mesa12"><a href="#mesa12">mesa 12</a></p>
+    <p class="mesa mesa13"><a href="#mesa13">mesa 13</a></p>
+</div>
+
+<div class="contenedor">
+    <h2>MESA1</h2>
+    <div class="contenido" id="mesa1"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa1"></p>
+    </div>
+    <button class="finalizar" id="finalizarmesai" onclick="finalmesa1()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA2</h2>
+    <div class="contenido" id="mesa2"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa2"></p>
+    </div>
+    <button class="finalizar" id="finalizarmesa2" onclick="finalmesa2()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA3</h2>
+    <div class="contenido" id="mesa3"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa3"></p>
+    </div>
+    <button class="finalizar" id="finalizarMesa3" onclick="finalmesa3()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA4</h2>
+    <div class="contenido" id="mesa4"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa4"></p>
+    </div>
+    <button class="finalizar" id="finalizarMesa4" onclick="finalmesa4()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA5</h2>
+    <div class="contenido" id="mesa5"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa5"></p>
+    </div>
+    <button class="finalizar" id="finalizarmesa5" onclick="finalmesa5()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA6</h2>
+    <div class="contenido" id="mesa6"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa6"></p>
+    </div>
+    <button class="finalizar" id="finalizarmesa6" onclick="finalmesa6()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA7</h2>
+    <div class="contenido" id="mesa7"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa7"></p>
+    </div>
+    <button class="finalizar" id="finalizarmesa7" onclick="finalmesa7()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA8</h2>
+    <div class="contenido" id="mesa8"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa8"></p>
+    </div>
+    <button class="finalizar" id="finalizarMesa8" onclick="finalmesa8()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA9</h2>
+    <div class="contenido" id="mesa9"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa9"></p>
+    </div>
+    <button class="finalizar" id="finalizarMesa9" onclick="finalmesa9()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA10</h2>
+    <div class="contenido" id="mesa10"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa10"></p>
+    </div>
+    <button class="finalizar" id="finalizarmesa10" onclick="finalmesa10()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA11</h2>
+    <div class="contenido" id="mesa11"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa11"></p>
+    </div>
+    <button class="finalizar" id="finalizarmesa11" onclick="finalmesa11()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA12</h2>
+    <div class="contenido" id="mesa12"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa12"></p>
+    </div>
+    <button class="finalizar" id="finalizarmesa12" onclick="finalmesa12()">Finalizar</button>
+</div>
+
+<div class="contenedor">
+    <h2>MESA13</h2>
+    <div class="contenido" id="mesa13"></div>
+    <div class="contentTotal">
+        <p class="textTotal">TOTAL: </p>
+        <p class="total" id="totalContenidoMesa13"></p>
+    </div>
+    <button class="finalizar" id="finalizarMesa13" onclick="finalmesa13()">Finalizar</button>
+</div>
+
+
+<script src="cuenta.js"></script>
+</body>
+</html>

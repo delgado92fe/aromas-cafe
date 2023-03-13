@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/licuados.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas licuado-bar</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu-batido"><a href="#batido">Batido</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizza.html">Pizzas</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="postres.html">Postre</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a></button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+
+    <div id="licuados">
+        <h3>LICUADOS</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="licuado" onclick="licuado1()">
+                    <img src="../imagenes/licuados/licuado1.png" alt="foto no disponible">
+                    <p class="nombre">Frutilla</p>
+                    <p id="descripcion_licuado1" class="descripcion"></p>
+                    <p id="precio_licuado1" class="precio"></p>
+                </div>
+                <div class="contenedor-de-input1">
+                    <div id="paraLicuado">
+                        <center><h4 class="ipciones" >SELECCIONE CON QUE DESEA SU LICUADO</h4></center>
+                        <center><p class="ipciones" id="leche1">Leche</p></center>
+                        <center><p class="ipciones" id="sprite1">Sprite</p></center>
+                        <center><p class="ipciones" id="agua1">Agua</p></center>
+                    </div>
+                    <div class="inputlicuado1">
+                        <input class="ingresonumero1" id="cantidadlicuado1" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="seleclicuado1()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelarlicuado1()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="licuado" onclick="licuado2()">
+                    <img src="../imagenes/licuados/licuado2.png" alt="foto no disponible">
+                    <p class="nombre">Durazno</p>
+                    <p id="descripcion_licuado2" class="descripcion"></p>
+                    <p id="precio_licuado2" class="precio"></p>
+                </div>
+                <div class="contenedor-de-input2">
+                    <div id="paraLicuado">
+                        <center><h4 class="ipciones" >SELECCIONE CON QUE DESEA SU LICUADO</h4></center>
+                        <center><p class="ipciones" id="leche2">Leche</p></center>
+                        <center><p class="ipciones" id="sprite2">Sprite</p></center>
+                        <center><p class="ipciones" id="agua2">Agua</p></center>
+                    </div>
+                    <div class="inputlicuado2">
+                        <input class="ingresonumero2" id="cantidadlicuado2" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" onclick="seleclicuado2()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelarlicuado2()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="licuado" onclick="licuado3()">
+                    <img src="../imagenes/licuados/licuado3.png" alt="foto no disponible">
+                    <p class="nombre">Banana</p>
+                    <p id="descripcion_licuado3" class="descripcion"></p>
+                    <p id="precio_licuado3" class="precio"></p>
+                </div>
+                <div class="contenedor-de-input3">
+                    <div id="paraLicuado">
+                        <center><h4 class="ipciones" >SELECCIONE CON QUE DESEA SU LICUADO</h4></center>
+                        <center><p class="ipciones" id="leche3">Leche</p></center>
+                        <center><p class="ipciones" id="sprite3">Sprite</p></center>
+                        <center><p class="ipciones" id="agua3">Agua</p></center>
+                    </div>
+                    <div class="inputlicuado3">
+                        <input class="ingresonumero3" id="cantidadlicuado3" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" id="enviar-pedido" onclick="seleclicuado3()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelarlicuado3()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="licuado" onclick="licuado4()">
+                    <img src="../imagenes/licuados/licuado4.png" alt="foto no disponible">
+                    <p class="nombre">Multifruta</p>
+                    <p id="descripcion_licuado4" class="descripcion"></p>
+                    <p id="precio_licuado4" class="precio"></p>
+                </div>
+                <div class="contenedor-de-input4">
+                    <div id="paraLicuado">
+                        <center><h4 class="ipciones" >SELECCIONE CON QUE DESEA SU LICUADO</h4></center>
+                        <center><p class="ipciones" id="leche4">Leche</p></center>
+                        <center><p class="ipciones" id="sprite4">Sprite</p></center>
+                        <center><p class="ipciones" id="agua4">Agua</p></center>
+                    </div>
+                    <div class="inputlicuado4">
+                        <input class="ingresonumero4" id="cantidadlicuado4" type="number" name="clasica">
+                        <div class="botones">
+                            <button class="seleccionar" id="enviar-pedido" onclick="seleclicuado4()">seleccionar</button>
+                            <button class="cancelar" onclick="cancelarlicuado4()">cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Batido Aromas</h3>
+    <div id="batido">
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="licuado" onclick="licuado5()">
+                    <img src="../imagenes/licuados/licuado5.png" alt="foto no disponible">
+                    <p class="nombre">Batido</p>
+                    <p id="descripcion_licuado5" class="descripcion"></p>
+                    <p id="precio_licuado5" class="precio"></p>
+                </div>
+                <div class="inputbatido">
+                    <input class="ingresonumero5" id="cantidadbatido" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="seleclicuado5()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarlicuado5()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigos.js/licuados.js"></script>
+</body>
+</html>

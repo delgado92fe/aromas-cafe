@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/frappe.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas frappe-bar</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizza.html">Pizzas</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="postres.html">Postre</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a></button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+    
+    <div id="frappes">
+        <h3>FRAPPES</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="frappe" onclick="frappe1()">
+                    <img src="../imagenes/frappes/frappe1.png" alt="foto no disponible">
+                    <p class="nombre">Oreo</p>
+                    <p id="descripcion_frappe1" class="descripcion"></p>
+                    <p id="precio_frappe1" class="precio"></p>
+                </div>
+                <div class="inputfrappe1">
+                    <input class="ingresonumero1" id="cantidadfrappe1" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecfrappe1()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarfrappe1()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="frappe" onclick="frappe2()">
+                    <img src="../imagenes/frappes/frappe2.png" alt="foto no disponible">
+                    <p class="nombre">Nutella</p>
+                    <p id="descripcion_frappe2" class="descripcion"></p>
+                    <p id="precio_frappe2" class="precio"></p>
+                </div>
+                <div class="inputfrappe2">
+                    <input class="ingresonumero2" id="cantidadfrappe2" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecfrappe2()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarfrappe2()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="frappe" onclick="frappe3()">
+                    <img src="../imagenes/frappes/frappe3.png" alt="foto no disponible">
+                    <p class="nombre">Bon o bon</p>
+                    <p id="descripcion_frappe3" class="descripcion"></p>
+                    <p id="precio_frappe3" class="precio"></p>
+                </div>
+                <div class="inputfrappe3">
+                    <input class="ingresonumero3" id="cantidadfrappe3" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecfrappe3()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarfrappe3()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="frappe" onclick="frappe4()">
+                    <img src="../imagenes/frappes/frappe4.png" alt="foto no disponible">
+                    <p class="nombre">Block</p>
+                    <p id="descripcion_frappe4" class="descripcion"></p>
+                    <p id="precio_frappe4" class="precio"></p>
+                </div>
+                <div class="inputfrappe4">
+                    <input class="ingresonumero4" id="cantidadfrappe4" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecfrappe4()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarfrappe4()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="frappe" onclick="frappe5()">
+                    <img src="../imagenes/frappes/frappe5.png" alt="foto no disponible">
+                    <p class="nombre">Dulce de leche</p>
+                    <p id="descripcion_frappe5" class="descripcion"></p>
+                    <p id="precio_frappe5" class="precio"></p>
+                </div>
+                <div class="inputfrappe5">
+                    <input class="ingresonumero5" id="cantidadfrappe5" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecfrappe5()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarfrappe5()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="frappe" onclick="frappe6()">
+                    <img src="../imagenes/frappes/frappe6.png" alt="foto no disponible">
+                    <p class="nombre">Caramelo</p>
+                    <p id="descripcion_frappe6" class="descripcion"></p>
+                    <p id="precio_frappe6" class="precio"></p>
+                </div>
+                <div class="inputfrappe6">
+                    <input class="ingresonumero6" id="cantidadfrappe6" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecfrappe6()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarfrappe6()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="frappe" onclick="frappe7()">
+                    <img src="../imagenes/frappes/frappe7.png" alt="foto no disponible">
+                    <p class="nombre">Smoothie</p>
+                    <p id="descripcion_frappe7" class="descripcion"></p>
+                    <p id="precio_frappe7" class="precio"></p>
+                </div>
+                <div class="inputfrappe7">
+                    <input class="ingresonumero7" id="cantidadfrappe7" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecfrappe7()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarfrappe7()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="frappe" onclick="frappe8()">
+                    <img src="../imagenes/frappes/frappe8.png" alt="foto no disponible">
+                    <p class="nombre">Milk shake</p>
+                    <p id="descripcion_frappe8" class="descripcion"></p>
+                    <p id="precio_frappe8" class="precio"></p>
+                </div>
+                <div class="inputfrappe8">
+                    <input class="ingresonumero8" id="cantidadfrappe8" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecfrappe8()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarfrappe8()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigos.js/frappe.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/pizza.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas Cafe-bar</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizzas.html">Pizzas</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="postres.html">Postre</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a> </button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+    
+    <div id="pizzas">
+        <h3>pizza</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza1()">
+                    <img id="imagen1" class="imgpizza" src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">Mozzarella</p>
+                    <p id="descripcion_pizza1" class="descripcion"></p>
+                    <p id="precio_pizza1" class="precio"></p>
+                </div>
+                <div class="inputpizza1">
+                    <input class="ingresonumero1" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpizza1()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza1()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza2()">
+                    <img id="imagen2" src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">Provolone con miel</p>
+                    <p id="descripcion_pizza2" class="descripcion"></p>
+                    <p id="precio_pizza2" class="precio"></p>
+                </div>
+                <div class="inputpizza2">
+                    <input class="ingresonumero2" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpizza2()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza2()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza3()">
+                    <img id="imagen3" src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">Calabresa</p>
+                    <p id="descripcion_pizza3" class="descripcion"></p>
+                    <p id="precio_pizza3" class="precio"></p>
+                </div>
+                <div class="inputpizza3">
+                    <input class="ingresonumero3" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpizza3()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza3()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza4()">
+                    <img src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">Jamon crudo</p>
+                    <p id="descripcion_pizza4" class="descripcion"></p>
+                    <p id="precio_pizza4" class="precio"></p>
+                </div>
+                <div class="inputpizza4">
+                    <input class="ingresonumero4" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpizza4()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza4()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza5()">
+                    <img src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">4 quesos</p>
+                    <p id="descripcion_pizza5" class="descripcion"></p>
+                    <p id="precio_pizza5" class="precio"></p>
+                </div>
+                <div class="inputpizza5">
+                    <input class="ingresonumero5" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpizza5()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza5()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza6()">
+                    <img src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">Margarita</p>
+                    <p id="descripcion_pizza6" class="descripcion"></p>
+                    <p id="precio_pizza6" class="precio"></p>
+                </div>
+                <div class="inputpizza6">
+                    <input class="ingresonumero6" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpizza6()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza6()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza7()">
+                    <img src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">Reyna azul</p>
+                    <p id="descripcion_pizza7" class="descripcion"></p>
+                    <p id="precio_pizza7" class="precio"></p>
+                </div>
+                <div class="inputpizza7">
+                    <input class="ingresonumero7" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpizza7()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza7()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza8()">
+                    <img src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">Fugazzetta</p>
+                    <p id="descripcion_pizza8" class="descripcion"></p>
+                    <p id="precio_pizza8" class="precio"></p>
+                </div>
+                <div class="inputpizza8">
+                    <input class="ingresonumero8" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpizza8()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza8()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="pizza" onclick="pizza9()">
+                    <img src="../imagenes/pizza1.png" alt="foto no disponible">
+                    <p class="nombre">Especial con jamón</p>
+                    <p id="descripcion_pizza9" class="descripcion"></p>
+                    <p id="precio_pizza9" class="precio"></p>
+                </div>
+                <div class="inputpizza9">
+                    <input class="ingresonumero9" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" onclick="selecpizza9()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpizza9()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigos.js/pizza.js"></script>
+</body>
+</html>

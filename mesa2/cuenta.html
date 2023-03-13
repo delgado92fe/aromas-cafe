@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>mesa</title>
+    </head>
+    <body>
+    <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas Bebidas</h1></center>
+        <nav class="nav">
+            <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+            <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+            <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+            <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+            <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+            <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+            <button class="botonmenu"><a href="pizza.html">Pizza</a></button>
+            <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+            <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+        </nav>
+    </div>
+
+        <div class="contenedor">
+            <div class="superior">
+                <div class="subcontenedor cantidad">Cantidad</div>
+                <div class="subcontenedor pedido">Pedido</div>
+                <div class="subcontenedor pedido">precio</div>
+            </div>
+            <div class="inferior"></div>
+            <p class="salidaTotal"></p>
+        </div>
+        <button class="botonCuenta"onclick="filaizar()">Pedir cuenta</button>
+
+        <script src="codigos.js/cuenta.js"></script>
+    </body>
+</html>

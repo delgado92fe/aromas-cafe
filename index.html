@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, .user-scalable=no,.initial-scale=1.0,.minimum-scale=1.0">
+	<meta name="keywords" content="web desarrollo pagina sitio">
+	<meta name="description" content="pagina para los turnos de las farmacias aimogasta, negocios, publicidad">
+	<meta name="autor" content="Franco Delgado">
+	<meta name="robots" content="index, aimogasta, farmacia, turno, rioja">
+	<meta charset="utf-8">
+	<link rel="icon" href="icon.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Muestra</title>
+</head>
+<body style="background-color: gainsboro;">
+    <center><img src="imagenes/aromaslogo.png" style="height: 50vh; width: 100vh; margin: 0 auto;"></center>
+	<center><h1 style="font-family: cursive; color:#003; cursor: default;">BIENVENIDO</h1></center><!--MODIFICADO LOS BOTONES Y CURSOR. ESPERANDO PARA SUBIR-->
+	<!--p style="font-size: 24px; color:#003; ">Puede ingresar desde 2 dispositivos distintos o primero ingresar como cliente y luego como administrador y ver los pedidos cargados desde el lado del cliente</p-->
+
+	<div style="height: 20vh; width: 100%;display: grid; grid-template-columns: 33% 34% 33%">
+		<button onclick="administrador()" style="height: 10vh; width: 20vh; margin: auto; font-size: 80%; background-color: rgb(162, 165, 165); cursor: pointer">IR A ADMINISTRADOR</button>
+		<button onclick="cargarDatos()" style="height: 10vh; width: 20vh; margin: auto; font-size: 80%; background-color: rgb(162, 165, 165); cursor: pointer">Cargar datos</button>
+		<button onclick="cierreCaja()" style="height: 10vh; width: 20vh; margin: auto; font-size: 80%; background-color: rgb(162, 165, 165); cursor: pointer">CIERRE DE CAJA</button>
+	</div>
+    <script>
+		function administrador(){
+				location.href = "administracion-bar/pedidos/index.html";
+		}
+		function cargarDatos(){
+				location.href = "administracion-bar/modificar precios/index.php";
+		}
+        function cierreCaja(){
+            location.href = "administracion-bar/cierreCaja/cierredecaja.php";
+        }
+    </script>
+</body>
+</html>

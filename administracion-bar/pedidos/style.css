@@ -1,0 +1,306 @@
+body{
+    background-color: #f8c98cf3;
+    padding: 0;
+    background-size: 100% 100%;
+    background-repeat: round;
+}
+h1{
+    height: 9vh;
+    width: 100%;
+    margin: auto;
+    border: solid 2px #000;
+    padding: auto;
+    background-color: #0e855d;
+    text-align: center;
+    font-size: 30px;
+}
+a{
+    background: transparent;
+    font-style: none;
+    text-decoration: none;
+    color:#000;
+}
+.botonRegresar{
+    height: auto;
+    width: auto;
+    padding: 2px 6px;
+    background-color: #0a583e;
+    border: solid 2px #063123;
+    font-size: 3vh;
+}
+.barra{
+    position: sticky;
+    top: 4px;
+    z-index: 20;
+    height: auto;
+    width: 100%;
+    margin-top: 2vh;
+    background: rgba(95, 158, 160, 0.445);
+    padding: 2px 0;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    background-color: transparent;
+    text-decoration: none;
+    color: #cacaca;
+}
+.mesa{
+    height: 98%;
+    width: 9vh;
+    margin: 0 auto;
+    background: rgb(43, 43, 42);
+    color: #cacaca;
+    display: inline-block;
+    cursor: pointer;
+}
+p{
+    margin-top: 0;
+    margin-bottom:10px;
+}
+h2{
+    height: 6vh;
+    width:auto;
+    margin: 0;
+}
+.contenedor{
+    height: auto;
+    width: 90%;
+    margin: 4vh;
+    display: grid;
+    grid-template-rows: 22% 43% 25% 10%;
+}
+.contentTotal{
+    height: auto;
+    width: auto;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: rgb(254, 254, 255);
+    background-color: #073f2c;
+}
+.contenido{
+    height: auto;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding: 0;
+    background: #073f2c;
+}
+.contenpedido{
+    height: auto;
+    width: auto;
+    display: grid;
+    background: #18da99;
+    grid-template-columns: 60% 40%;
+    border: solid 1px #000;
+}
+.totalp{
+    margin: 0;
+    margin-bottom: 1px;
+    margin-left: auto;
+    margin-right: 1px;
+    background: #18da99;
+}
+.pedido{
+    margin: 0;
+    margin-bottom: 1px;
+    background: #18da99;
+}
+.textTotal{
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(254, 254, 255);
+    background: transparent;
+}
+.total{
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 5vh;
+    color: rgb(254, 254, 255);
+    background: transparent;
+}
+/*primer cuadro*/
+/*#contenido{
+    height: auto;
+    width: 90%;
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding: 4px;
+    background: #073f2c;
+}*/
+.finalizar{
+    height: 3vh;
+    width: 10vh;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: aqua;
+}
+/*segundo cuadro*/
+
+/*cuadro mesa2*/
+.horainicio{
+    margin: 0;
+    margin-bottom: 1px;
+    border: solid 1px #000;
+    background: #17e7a2;
+}
+.pedido{
+    margin: 0;
+    margin-bottom: 1px;
+    background: #18da99;
+}
+.horacierre{
+    margin: 0;
+    margin-bottom: 1px;
+    border: solid 1px #000;
+    background: #17e7a2;
+}
+
+@media screen and (max-width: 450px) {
+    h1{
+        height: 8vh;
+        width: 100%;
+        margin: auto;
+        border: solid 2px #000;
+        padding: auto;
+        background-color: #0e855d;
+        text-align: center;
+        font-size: 36px;
+    }
+    .barra{
+        position: sticky;
+        z-index: 20;
+        height: auto;
+        width: 100%;
+        margin-top: 2vh;
+        background: cadetblue;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    /*primer cuadro*/
+.contenedor{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1/3 2/3 1/3;
+}
+/*primer cuadro*/
+#contenido{
+    height: auto;
+    width: 98%;
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding: 4px;
+    background: #073f2c;
+}
+    #finalizar{
+        height: 4vh;
+        width: 14vh;
+        padding-left: 4px;
+        padding-right: 4px;
+        background-color: aqua;
+        font-size: 100%;
+    }
+    /*segundo cuadro*/
+    #mesa1{
+        height: auto;
+        width: 98%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 4px;
+        background: #073f2c;
+    }
+    #finalizarmesai{
+        height: 4vh;
+        width: 14vh;
+        padding-left: 4px;
+        padding-right: 4px;
+        background-color: aqua;
+        font-size: 100%;
+    }
+    /*cuadro mesa2*/
+    #mesa2{
+        height: auto;
+        width: 90%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 4px;
+        background: #073f2c;
+    }
+    #finalizarmesa2{
+        height: 4vh;
+        width: 14vh;
+        padding-left: 4px;
+        padding-right: 4px;
+        background-color: aqua;
+        font-size: 100%;
+    }
+    .horainicio{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #17e7a2;
+        font-size: 26px;
+    }
+    .pedido{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #18da99;
+        font-size: 26px;
+    }
+    .horacierre{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #17e7a2;
+        font-size: 26px;
+    }
+    .horainiciomesa1{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #17e7a2;
+        font-size: 26px;
+    }
+    .pedidomesa1{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #18da99;
+        font-size: 26px;
+    }
+    .horacierremesa1{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #17e7a2;
+        font-size: 26px;
+    }
+    .horainiciomesa2{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #17e7a2;
+        font-size: 26px;
+    }
+    .pedidomesa2{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #18da99;
+        font-size: 26px;
+    }
+    .horacierremesa2{
+        margin: 0;
+        margin-bottom: 1px;
+        border: solid 1px #000;
+        background: #17e7a2;
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,118 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/postre.css">
+    <link rel="stylesheet" href="../estilos/estiloPrincipal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Aromas café-bar</title>
+</head>
+<body>
+    <div class="contenedorsuperior">
+        <div id="primercuadro">
+            <div class="menudesplegable" onclick="menu()"></div>
+            <center><h1>Aromas Cafe-bar</h1></center>
+            <nav class="nav">
+                <button class="botonmenu"><a href="desayuno.html">Desayuno</a></button>
+                <button class="botonmenu"><a href="cafe.html">Cafe</a></button>
+                <button class="botonmenu"><a href="frappes.html">Frappes</a></button>
+                <button class="botonmenu"><a href="licuados.html">Licuados</a></button>
+                <button class="botonmenu"><a href="waffles.html">Waffles</a></button>
+                <button class="botonmenu"><a href="bebidas.html">Bebidas</a></button>
+                <button class="botonmenu"><a href="pizza.html">Pizzas</a></button>
+                <button class="botonmenu"><a href="picada.html">Picadas</a></button>
+                <button class="botonmenu"><a href="panificacion.html">Panificacion</a></button>
+                <button class="botonmenu"><a href="cuenta.html">PEDIR CUENTA</a></button>
+            </nav>
+        </div>
+
+        <div class="comida">
+            <div id="vistaprevia">
+                <p id="pedido"></p>
+            </div>
+            <div class="botones-vistaprevia">
+                <button id="enviarpedido" onclick="enviar()" name="submit">ENVIAR</button>
+                <button id="eliminarpedido" onclick="eliminar()">BORRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-logo">
+        <img class="imagen-logo" src="../imagenes/aromaslogo.png">
+    </div>
+    <div id="postre">
+        <h3>POSTRES</h3>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="postre" onclick="postre1()">
+                    <img src="../imagenes/postres/postre1.png" alt="foto no disponible">
+                    <p class="nombre">Ensalada de frutas</p>
+                    <p id="descripcion_postre1" class="descripcion"></p>
+                    <p id="precio_postre1" class="precio"></p>
+                </div>
+                <div class="inputpostre1">
+                    <input class="ingresonumero1" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpostre1()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpostre1()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="postre" onclick="postre2()">
+                    <img src="../imagenes/postres/postre2.png" alt="foto no disponible">
+                    <p class="nombre">Durazno con crema</p>
+                    <p id="descripcion_postre2" class="descripcion"></p>
+                    <p id="precio_postre2" class="precio"></p>
+                </div>
+                <div class="inputpostre2">
+                    <input class="ingresonumero2" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpostre2()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpostre2()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="postre" onclick="postre3()">
+                    <img src="../imagenes/postres/postre3.png" alt="foto no disponible">
+                    <p class="nombre">Frutilla con crema</p>
+                    <p id="descripcion_postre3" class="descripcion"></p>
+                    <p id="precio_postre3" class="precio"></p>
+                </div>
+                <div class="inputpostre3">
+                    <input class="ingresonumero3" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpostre3()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpostre3()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo-principal">
+            <div class="cuadroInterno">
+                <div class="postre" onclick="postre4()">
+                    <img src="../imagenes/postres/postre4.png" alt="foto no disponible">
+                    <p class="nombre">Helados</p>
+                    <p id="descripcion_postre4" class="descripcion"></p>
+                    <p id="precio_postre4" class="precio"></p>
+                </div>
+                <div class="inputpostre4">
+                    <input class="ingresonumero4" type="number" name="clasica">
+                    <div class="botones">
+                        <button class="seleccionar" id="enviar-pedido" onclick="selecpostre4()">seleccionar</button>
+                        <button class="cancelar" onclick="cancelarpostre4()">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codigos.js/postres.js"></script>
+</body>
+</html>

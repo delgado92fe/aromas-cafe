@@ -1,0 +1,197 @@
+*{
+    background-color: #f8c98cf3;
+    padding: 0;
+}
+.contenedorsuperior{
+    position: sticky;
+    top: 1px;
+    z-index: 20;
+}
+#primercuadro{
+    height: 4vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+h1{
+    height: 5vh;
+    width: 100%;
+    margin: 0;
+    background-color: #f5a123;
+    text-align: center;
+    font-size: 4vh;
+    font-style: italic;
+    font-family: cursive;
+}
+.contenedor-logo{
+    height: 30vh;
+    width: 100%;
+    margin: 4vh 0;
+    padding: 0;
+}
+.imagen-logo{
+    height: 100%;
+    width: 90%;
+    margin: 0 5%;
+}
+/*pagina principal*/
+a{
+    font-family: italic;
+    font-family: cursive;
+    text-decoration: none;
+    font-size: 3vh;
+    color: #000;
+    background: transparent;
+}
+.menuPrincipal{
+    height: auto;
+    width: 80%;
+    padding: 1vh 4vh;
+}
+.opciones{
+    height: auto;
+    width: 100%;
+    margin-top: 6px;
+}
+/*VISTA PREVIA*/
+.nav{
+    height: auto;
+    width: 18vh;
+    margin: 0;
+    background-color: #f5a123;
+    display: none;
+    grid-template-rows: auto;
+    position: relative;
+    z-index: 3;
+}
+.menudesplegabl{
+    height: 100%;
+    width: 100%;
+    background-color: #f5a123;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.menudesplegable{
+    height: 100%;
+    width: 100%;
+    background-color: #f5a123;
+    background-image: url(../iconos/Menu_icon_icon-icons.com_71858.ico);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.botonmenu{
+    height: 96%;
+    width: 100%;
+    padding: 3px;
+    background-color: #d4770c;
+    border: solid 2px #d33505;
+    font-size: 10px;
+}
+#cuenta{
+    height: 6vh;
+    width: 8vh;
+    display: none;
+}
+.comida{
+    height: 6vh;
+    width: 100%;
+    margin-top: 3vh;
+    display: none;
+    grid-template-columns: 60% 40%;
+}
+#pedido{
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(240, 255, 255, 0.548);
+    overflow-x: scroll;
+    font-size: 14px;
+}
+.botones-vistaprevia{
+    height: 98%;
+    width: 98%;
+    margin: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: #f5a123;
+}
+button{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    font-size: 24px;
+}
+#enviarpedido{
+    height: 60%;
+    background-color: #18ee04;
+    font-size: 10px;
+}
+#eliminarpedido{
+    height: 60%;
+    background-color: #ee3b04;
+    font-size: 10px;
+}
+/*CUENTA*/
+.contenedor{
+    height: auto;
+    width: 70vh;
+    margin-top: 6vh;
+    border: solid 2px #987;
+    display: flex;
+    flex-direction: column;
+}
+.superior{
+    height: auto;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid #000 2px ;
+}
+.botonCuenta{
+    height: 90%;
+    width: 70vh;
+    margin: auto;
+    padding: 0;
+    font-size: 24px;
+}
+.subcontenedor{
+    display: block;
+    margin: 0 auto;
+}
+.inferior{
+    height: auto;
+    width: 100%;
+    padding-bottom: 4px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.contenedorCantidad{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 6px;
+    border-bottom: solid #000 2px ;
+    margin: 0;
+}
+.contenedorPedido{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 6px;
+    border-bottom: solid #000 2px ;
+    margin: 0;
+}
+.contenedorPrecio{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 6px;
+    border-bottom: solid #000 2px ;
+    margin: 0;
+}
+h3{
+    margin-top: 0;
+}
